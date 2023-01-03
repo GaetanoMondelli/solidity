@@ -9,8 +9,8 @@
   ],
   "impls": {
     "36d90be77618025fb7f54e790571a936d109b58c4314eb5762b89e128ad702d5": {
-      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
-      "txHash": "0xc0c3d8a0145f084041cd5414f4f92928b7012910f9a662289c87f2b339d74261",
+      "address": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+      "txHash": "0xbf687564fb3191dd1b863e04c1cd827f649598c6653f097449de97597fcce2f7",
       "layout": {
         "solcVersion": "0.8.17",
         "storage": [
@@ -198,7 +198,7 @@
     },
     "addf22d7a451c15df8a1eed008214e5931365f757e3309b92662a376095f9be7": {
       "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
-      "txHash": "0xe1725e69a27c6de1e4ef4a0c8ca0c2530efa7cbcbf157a5261d26dbf01d8f27e",
+      "txHash": "0x180e761e7c9d29442f3b055fe01f219bc86f2f90906944ecfdfe7a723536981a",
       "layout": {
         "solcVersion": "0.8.17",
         "storage": [
@@ -329,7 +329,7 @@
             "slot": "301",
             "type": "t_uint256",
             "contract": "UUPSToken",
-            "src": "contracts/UUPSToken.sol:15"
+            "src": "contracts/UUPSToken.sol:19"
           }
         ],
         "types": {

@@ -5,6 +5,10 @@ import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+
+import "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol";
 
 contract UUPSToken is
     Initializable,
@@ -36,4 +40,13 @@ contract UUPSToken is
     function _authorizeUpgrade(
         address newImplementation
     ) internal override onlyOwner {}
+}
+
+contract UUPSTokenCustomProxy is ERC1967Proxy {
+    constructor(
+        address logic,
+        bytes memory data
+    ) ERC1967Proxy(logic, data) {
+    }
+    
 }
